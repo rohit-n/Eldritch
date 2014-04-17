@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Eldritch)
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+
+find_package (FMOD)
+
 add_subdirectory(Libraries/Core/)
 add_subdirectory(Libraries/Math/)
 add_subdirectory(Libraries/2D/)

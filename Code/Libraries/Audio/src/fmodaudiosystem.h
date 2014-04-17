@@ -9,7 +9,7 @@
 #include "array.h"
 #include "interpolator.h"
 
-#include "FMOD/fmod.hpp"
+#include "fmod.hpp"
 
 class FMODAudioSystem : public AudioSystemCommon
 {

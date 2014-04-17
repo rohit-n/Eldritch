@@ -11,6 +11,7 @@ include_directories(../../Libraries/3D/src)
 include_directories(../../Libraries/Core/src)
 include_directories(../../Libraries/Rodin/src)
 include_directories(../../Libraries/Workbench/src)
+include_directories(${FMOD_INCLUDE_DIR})
 include_directories(src)
 
 link_directories(${CMAKE_SOURCE_DIR}/Libraries/Audio/)

@@ -2,7 +2,7 @@
 #define FMODSOUND_H
 
 #include "soundcommon.h"
-#include "FMOD/fmod.hpp"
+#include "fmod.hpp"
 
 class IDataStream;
 class PackStream;

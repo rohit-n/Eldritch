@@ -5,7 +5,7 @@
 #include "iaudiosystem.h"
 #include "vector.h"
 
-#include "FMOD/fmod.hpp"
+#include "fmod.hpp"
 
 class FMODSoundInstance : public SoundInstanceCommon
 {
