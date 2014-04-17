@@ -305,7 +305,11 @@ int MeshCompiler::Compile( const char* InFilename, const char* OutFilename, bool
 	TiXmlElement* RootElement = XMLDoc.FirstChildElement();	// "mesh"
 
 	// Sanity check
+#ifdef _WIN32
 	if( _stricmp( RootElement->Value(), "mesh" ) )
+#elif __linux__
+    if( strcasecmp( RootElement->Value(), "mesh" ) )
+#endif
 	{
 		PRINTF( "Input file is not a valid XML mesh file.\n" );
 		return -1;
